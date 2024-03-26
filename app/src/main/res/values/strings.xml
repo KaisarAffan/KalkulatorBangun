@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">KALKULATOR BANGUN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="bangunDatarTitle">
+        <item>Lingkaran</item>
+        <item>Persegi</item>
+        <item>Persegi Panjang</item>
+        <item>Segitiga</item>
+    </string-array>
+
+    <string-array name="bangunDatarDescription">
+        <item> L = π × r × r </item>
+        <item>L = s x s</item>
+        <item>L = P x L</item>
+        <item>L = 1/2 x a x t </item>
+    </string-array>
+
+    <string-array name="bangunRuangTitle">
+        <item>Bola</item>
+        <item>Kubus</item>
+        <item>Tabung</item>
+        <item>Kerucut</item>
+    </string-array>
+
+    <string-array name="bangunRuangDescription">
+        <item>L = 4 x π x r x r</item>
+        <item>L = 6 x s x s</item>
+        <item>L = 2 x (π x r2) + 2 x π x r x t = 2 x π x r x (r + t)</item>
+        <item>L = (π r s) + (π r²) atau L = π r (s+r)</item>
+    </string-array>
+</resources>
