@@ -1,15 +1,9 @@
-package com.example.kalkulatorbangun.BangunDatar.BangunDatarChild;
-
-import android.content.Intent;
-import android.os.Bundle;
+package com.example.kalkulatorbangun.BangunRuang.BangunRuangChild;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
+import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,7 +11,8 @@ import android.widget.Toast;
 
 import com.example.kalkulatorbangun.R;
 
-public class Lingkaran extends AppCompatActivity {
+public class Kubus extends AppCompatActivity {
+
     EditText inputUser;
     Button buttonHitung;
 
@@ -25,9 +20,9 @@ public class Lingkaran extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ch_lingkaran);
+        setContentView(R.layout.activity_kubus);
 
-        inputUser = findViewById(R.id.EtJari);
+        inputUser = findViewById(R.id.Etsisi);
         buttonHitung = findViewById(R.id.sum);
         textViewResult = findViewById(R.id.tvHasil);
 
@@ -40,20 +35,18 @@ public class Lingkaran extends AppCompatActivity {
         });
     }
     private void hitung() {
-        String jariStr = inputUser.getText().toString().trim();
-        if (!jariStr.isEmpty()) {
-            double jari = Double.parseDouble(jariStr);
-            if (jari <= 0) {
-                Toast.makeText(this, "Panjang jari-jari harus lebih dari 0", Toast.LENGTH_SHORT).show();
+        String sisiStr = inputUser.getText().toString().trim();
+        if (!sisiStr.isEmpty()) {
+            double sisi = Double.parseDouble(sisiStr);
+            if (sisi <= 0) {
+                Toast.makeText(this, "Panjang sisi harus lebih dari 0", Toast.LENGTH_SHORT).show();
                 return;
             }
-
-            double phi = 3.14;
-            double luas = phi * jari * jari;
+            double luas = 6 * sisi * sisi;
             String hasil = String.format("%.2f", luas) + "cm";
             textViewResult.setText(hasil);
         } else {
-            Toast.makeText(this, "Masukkan panjang jari-jari terlebih dahulu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Masukkan panjang sisi terlebih dahulu", Toast.LENGTH_SHORT).show();
         }
     }
 }

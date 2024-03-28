@@ -31,11 +31,12 @@
 
 
         <EditText
-            android:id="@+id/num2"
+            android:id="@+id/EtJari"
             android:layout_width="350dp"
             android:layout_height="60dp"
-            android:hint="Masukan Angka Kedua "
+            android:hint="Masukan Jari Jari"
             android:textColorHint="@color/gray3"
+            android:textColor="@color/black"
             android:background="@drawable/editext_kalkulator"
             android:inputType="number"
             android:padding="15dp"
@@ -55,7 +56,7 @@
             android:textSize="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num2" />
+            app:layout_constraintTop_toBottomOf="@+id/EtJari" />
 
         <Button
             android:id="@+id/sum"

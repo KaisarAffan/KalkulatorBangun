@@ -36,11 +36,12 @@
 
 
         <EditText
-            android:id="@+id/num1"
+            android:id="@+id/EtAlas"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:hint="Masukan Panjang Alas"
             android:textColorHint="@color/gray3"
+            android:textColor="@color/black"
             android:background="@drawable/editext_kalkulator"
             android:inputType="number"
             android:padding="15dp"
@@ -50,16 +51,17 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <EditText
-            android:id="@+id/num2"
+            android:id="@+id/EtTinggi"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:hint="Masukan Tinggi"
             android:textColorHint="@color/gray3"
+            android:textColor="@color/black"
             android:background="@drawable/editext_kalkulator"
             android:inputType="number"
             android:padding="15dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/num1"
+            app:layout_constraintTop_toBottomOf="@+id/EtAlas"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -73,7 +75,7 @@
             android:textSize="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num2" />
+            app:layout_constraintTop_toBottomOf="@+id/EtTinggi" />
 
         <Button
             android:id="@+id/sum"

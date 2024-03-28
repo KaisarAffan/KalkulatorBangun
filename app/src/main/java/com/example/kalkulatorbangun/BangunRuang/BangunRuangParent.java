@@ -17,6 +17,10 @@ import com.example.kalkulatorbangun.BangunDatar.BangunDatarChild.Lingkaran;
 import com.example.kalkulatorbangun.BangunDatar.BangunDatarChild.Persegi;
 import com.example.kalkulatorbangun.BangunDatar.BangunDatarChild.PersegiPanjang;
 import com.example.kalkulatorbangun.BangunDatar.BangunDatarChild.Segitiga;
+import com.example.kalkulatorbangun.BangunRuang.BangunRuangChild.Kerucut;
+import com.example.kalkulatorbangun.BangunRuang.BangunRuangChild.Kubus;
+import com.example.kalkulatorbangun.BangunRuang.BangunRuangChild.Tabung;
+import com.example.kalkulatorbangun.BangunRuang.BangunRuangChild.ball;
 import com.example.kalkulatorbangun.Item;
 import com.example.kalkulatorbangun.MyAdapter;
 import com.example.kalkulatorbangun.R;
@@ -72,16 +76,16 @@ public class BangunRuangParent extends Fragment  implements MyAdapter.ItemClickL
     @Override
     public void onItemClick(View view, int position) {
         if (adapter.getItem(position).getTitle().equals("Bola")) {
-            Intent intent = new Intent(getActivity(), Lingkaran.class);
+            Intent intent = new Intent(getActivity(), ball.class);
             startActivity(intent);
         }else if (adapter.getItem(position).getTitle().equals("Kubus")) {
-            Intent intent = new Intent(getActivity(), Persegi.class);
+            Intent intent = new Intent(getActivity(), Kubus.class);
             startActivity(intent);
         }else if (adapter.getItem(position).getTitle().equals("Tabung")) {
-            Intent intent = new Intent(getActivity(), PersegiPanjang.class);
+            Intent intent = new Intent(getActivity(), Tabung.class);
             startActivity(intent);
         }else if (adapter.getItem(position).getTitle().equals("Kerucut")) {
-            Intent intent = new Intent(getActivity(), Segitiga.class);
+            Intent intent = new Intent(getActivity(), Kerucut.class);
             startActivity(intent);
         }
     }

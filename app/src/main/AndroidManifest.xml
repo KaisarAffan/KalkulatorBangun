@@ -16,6 +16,18 @@
         android:theme="@style/Theme.KALKULATORBANGUN"
         tools:targetApi="31" >
         <activity
+            android:name=".BangunRuang.BangunRuangChild.Kubus"
+            android:exported="false" />
+        <activity
+            android:name=".BangunRuang.BangunRuangChild.Kerucut"
+            android:exported="false" />
+        <activity
+            android:name=".BangunRuang.BangunRuangChild.Tabung"
+            android:exported="false" />
+        <activity
+            android:name=".BangunRuang.BangunRuangChild.ball"
+            android:exported="false" />
+        <activity
             android:name=".BangunDatar.BangunDatarChild.LingkaranCH"
             android:exported="false" />
         <activity

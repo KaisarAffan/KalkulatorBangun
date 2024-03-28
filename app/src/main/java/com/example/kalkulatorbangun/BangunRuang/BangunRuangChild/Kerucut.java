@@ -1,14 +1,10 @@
-package com.example.kalkulatorbangun.BangunDatar.BangunDatarChild;
-
-import android.os.Bundle;
+package com.example.kalkulatorbangun.BangunRuang.BangunRuangChild;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
+import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -16,8 +12,8 @@ import android.widget.Toast;
 
 import com.example.kalkulatorbangun.R;
 
+public class Kerucut extends AppCompatActivity {
 
-public class PersegiPanjang extends AppCompatActivity {
     EditText inputUser1,inputUser2;
     Button buttonHitung;
 
@@ -25,10 +21,10 @@ public class PersegiPanjang extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ch_persegi_panjang);
+        setContentView(R.layout.activity_kerucut);
 
-        inputUser1 = findViewById(R.id.EtLebar);
-        inputUser2 = findViewById(R.id.EtPanjang);
+        inputUser1 = findViewById(R.id.EtJari);
+        inputUser2 = findViewById(R.id.EtGarisLukis);
         buttonHitung = findViewById(R.id.sum);
         textViewResult = findViewById(R.id.tvHasil);
 
@@ -41,19 +37,20 @@ public class PersegiPanjang extends AppCompatActivity {
         });
     }
     private void hitung() {
-        String panjangStr = inputUser2.getText().toString().trim();
+        String garisLukisStr = inputUser2.getText().toString().trim();
         String lebarStr = inputUser1.getText().toString().trim();
-        if (!panjangStr.isEmpty() && !lebarStr.isEmpty()) {
-            double panjang = Double.parseDouble(panjangStr);
-            double lebar = Double.parseDouble(lebarStr);
-            if (panjang <= 0) {
-                Toast.makeText(this, "Panjang harus lebih dari 0", Toast.LENGTH_SHORT).show();
+        if (!garisLukisStr.isEmpty() && !lebarStr.isEmpty()) {
+            double garisLukis = Double.parseDouble(garisLukisStr);
+            double jari = Double.parseDouble(lebarStr);
+            if (garisLukis <= 0) {
+                Toast.makeText(this, "Garis Lukis harus lebih dari 0", Toast.LENGTH_SHORT).show();
                 return;
-            }else if(lebar <= 0) {
-                Toast.makeText(this, "Lebar harus lebih dari 0", Toast.LENGTH_SHORT).show();
+            }else if(jari <= 0) {
+                Toast.makeText(this, "Jari jari harus lebih dari 0", Toast.LENGTH_SHORT).show();
                 return;
             }
-            double luas = panjang * lebar;
+            double phi = 3.14;
+            double luas = phi * jari * (garisLukis + jari);
             String hasil = String.format("%.2f", luas) + "cm";
             textViewResult.setText(hasil);
         } else {
