@@ -21,20 +21,55 @@
 
     <ImageView
         android:id="@+id/profileImage"
-        android:layout_width="500dp"
+        android:layout_width="180dp"
         android:layout_height="200dp"
         android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
-        android:src="@drawable/baseline_account_circle_24"
+        android:src="@drawable/kesar"
         android:layout_marginBottom="15dp"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/emailIcon"
+        android:id="@+id/usernameIcon"
         android:layout_below="@+id/profileImage"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Username"
+        android:layout_toRightOf="@id/usernameIcon"
+        android:textColor="#2196F3"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/profileImage"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvusername"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@id/usernameIcon"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginStart="10dp"
+        android:text="Kaisar affan danendra"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailIcon"
+
+        android:layout_below="@+id/tvusername"
         android:src="@drawable/baseline_email_24"
         android:layout_marginStart="30dp"
         />
@@ -48,7 +83,7 @@
         android:layout_toRightOf="@id/emailIcon"
         android:textColor="#2196F3"
         android:layout_marginStart="10dp"
-        android:layout_below="@+id/profileImage"
+        android:layout_below="@+id/tvusername"
         android:layout_centerHorizontal="true"/>
 
     <TextView
