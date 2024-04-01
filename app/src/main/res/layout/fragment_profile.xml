@@ -1,29 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6C6C75">
+    android:background="@drawable/profilebackground">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="KAISAR AFFAN"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            />
-    </com.google.android.material.appbar.MaterialToolbar>
 
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="180dp"
         android:layout_height="200dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="140dp"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:src="@drawable/kesar"
@@ -46,7 +31,7 @@
         android:textSize="20dp"
         android:text="Username"
         android:layout_toRightOf="@id/usernameIcon"
-        android:textColor="#2196F3"
+        android:textColor="#12678D"
         android:layout_marginStart="10dp"
         android:layout_below="@+id/profileImage"
         android:layout_centerHorizontal="true"/>
@@ -59,7 +44,7 @@
         android:layout_toRightOf="@id/usernameIcon"
         android:textSize="15dp"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFFFFFFF"
+        android:textColor="#000000"
         android:layout_marginStart="10dp"
         android:text="Kaisar affan danendra"
         />
@@ -81,7 +66,7 @@
         android:textSize="20dp"
         android:text="Email"
         android:layout_toRightOf="@id/emailIcon"
-        android:textColor="#2196F3"
+        android:textColor="#12678D"
         android:layout_marginStart="10dp"
         android:layout_below="@+id/tvusername"
         android:layout_centerHorizontal="true"/>
@@ -94,7 +79,7 @@
         android:layout_toRightOf="@id/emailIcon"
         android:textSize="15dp"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFFFFFFF"
+        android:textColor="#000000"
         android:layout_marginStart="10dp"
         android:text="BlackHead2@gmail.com"
         />
@@ -105,7 +90,7 @@
         android:text="Log Out"
         android:id="@+id/logout"
         android:textColor="@android:color/white"
-        android:backgroundTint="#7E2D2D"
+        android:backgroundTint="#208F8C"
         android:layout_below="@+id/tvemail"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"/>
