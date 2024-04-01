@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.KALKULATORBANGUN" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.KALKULATORBANGUN" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">#FF0000</item>
+        <item name="colorPrimary">@color/black</item>
          <item name="colorSecondary">#A60808</item>
     </style>
+    <style name="Theme.KALKULATORBANGUN" parent="Base.Theme.KALKULATORBANGUN" />
 </resources>
